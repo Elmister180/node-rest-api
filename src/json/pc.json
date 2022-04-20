@@ -1,0 +1,17 @@
+[ 
+    {
+        "id": "1",
+        "storage": "1tb hdd",
+        "ram": "4 gb"
+    },
+    {
+        "id": "2",
+        "storage": "1 tb ssd",
+        "ram": "16 gb"
+    },
+    {
+        "id": "3",
+        "storage": "500 gb hdd",
+        "ram": "4 gb"
+    }
+]
