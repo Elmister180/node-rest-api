@@ -12,10 +12,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 //routes
-app.use("/api",require("./routes/index-api.js"));
+/* app.use("/api",require("./routes/index-api")); */
+app.use("/api",require("./routes/users"));
+app.use("/api",require("./routes/pc"));
 
 
 //strating server
 app.listen(app.get("port"), () => {
   console.log(`srver on port ${app.get("port")}`);
 });
+
+module.exports = app;

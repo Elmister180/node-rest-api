@@ -1,8 +1,10 @@
 const { Router } = require("express");
 const router = Router();
 
-router.get("/", (req, res) => {
-  res.send("users get");
+const users = require("../json/users.json");
+
+router.get("/users", (req, res) => {
+  res.json(users);
 });
 
 module.exports = router;
